@@ -46,3 +46,49 @@ You can keep adding constraints the same way—MILP handles them automatically.
 **Basically a modified Knapsack Problem**
 
 Source:  https://en.wikipedia.org/wiki/Knapsack_problem
+
+---
+### SAMPLE OUTPUT
+```bash
+*** RUN TIME ***
+   60.476 ms
+
+*** Constraints ***
+People: 10
+Vegans: 2
+Halals: 1
+BUDGET: $120
+REPEATS: 1
+
+Best option:
+Lebanese_Grill
+        Cost: 78.0
+                1x Falafel_Plate
+                1x Tabbouleh
+                1x Baklava_Tray
+                1x Hummus_Bowl
+
+*** ALL SOLUTIONS ***
+
+Thai_House
+        T_Cost: 89.0
+                1x Green_Curry
+                1x Chicken_Satay
+                1x Fried_Rice
+                1x Mango_Sticky_Rice
+
+Lebanese_Grill
+        T_Cost: 78.0
+                1x Falafel_Plate
+                1x Tabbouleh
+                1x Baklava_Tray
+                1x Hummus_Bowl
+
+Greek_Taverna
+        T_Cost: 91.0
+                1x Greek_Salad
+                1x Lamb_Gyro
+                1x Dolmades
+                1x Baklava
+```
+
