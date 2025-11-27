@@ -74,7 +74,7 @@ def solve_restaurant(
     # budget total
     model += pulp.lpSum(menu[i]["price"] * x[i] for i in range(len(menu))) <= budget
 
-    # maximum item repeats of 2, as an example.
+    # maximum item repeats of max_repeats.
     for i in range(len(menu)):
         model += x[i] <= max_repeats
 
