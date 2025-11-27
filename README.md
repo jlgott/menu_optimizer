@@ -16,6 +16,8 @@ In the end the script prints the cheapest restaurant that satisfies all your req
 1. pip install pulp
 2. python menu_solver.py
 
+- or use `uv` to sync
+
 ---
 ### Inputs
 - TOTAL_PEOPLE = 10
