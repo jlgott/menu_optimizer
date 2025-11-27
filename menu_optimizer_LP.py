@@ -1,6 +1,7 @@
 import time
 import pulp
 
+
 # dummy restaraunt **pre-filtered** menus
 #* NOTE: PuLP can NOT have spaces in namespaces, need underscore or .
 
@@ -38,9 +39,6 @@ restaurants = {
         {"name": "Fried_Rice", "serves": 3, "price": 20, "vegan": 0, "halal": 0},
     ]
 }
-
-
-
 
 
 # LP for one rest
@@ -100,7 +98,6 @@ def solve_restaurant(
     }
 
 
-
 # GLOBALS for testing
 TOTAL_PEOPLE = 10
 VEGAN_REQ = 2
@@ -121,7 +118,6 @@ def main_loop(total_people, vegan_req, halal_req, budget, max_repeats):
     
     cheapest = min(solutions, key=lambda s: s["cost"])
     return cheapest, solutions
-
 
 
 
